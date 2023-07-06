@@ -1,17 +1,15 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import type {PropsWithChildren} from 'react';
+import ProductCards from './components/cards/ProductCards';
+import ProductList from './components/list/ProductList';
+import SectionTitle from './components/titles/SectionTitle';
+import HomeBanner from './components/banners/HomeBanner'; 
+import type { PropsWithChildren } from 'react';
 import {
   SafeAreaView,
   ScrollView,
   StatusBar,
   Text,
+  StyleSheet,
   useColorScheme,
   View,
 } from 'react-native';
@@ -26,7 +24,7 @@ function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter, 
   };
 
   return (
@@ -35,20 +33,20 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Text>App</Text>
-        </View>
+      <ScrollView style={styles.ScrollView}>
+        <HomeBanner />
+        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Latest Products'} />
+        <ProductCards />
+        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Recomended For you'} />
+        <ProductList />
       </ScrollView>
     </SafeAreaView>
   );
 }
-
-
+const styles = StyleSheet.create({
+  ScrollView: {
+    paddingHorizontal: 14,
+    paddingVertical: 10,
+  }
+})
 export default App;
