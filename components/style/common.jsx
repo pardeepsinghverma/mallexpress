@@ -78,6 +78,9 @@ const common = StyleSheet.create({
   JustifyContentSpaceEvenly: {
     justifyContent: 'space-evenly',
   },
+  verticalAlignMiddle: {
+    verticalAlign: 'middle',
+  },
 
 
   // Comtainers styles
@@ -123,7 +126,9 @@ const common = StyleSheet.create({
   },
 
   // Link styles
-  Link:{},
+  Link: {
+    fontSize: 16,
+  },
 
 
   // Button styles

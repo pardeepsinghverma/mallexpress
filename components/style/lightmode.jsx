@@ -21,7 +21,9 @@ Black: {
   White: {
     color: '#ffffff',
   },
-  SmallText: {},
+  SmallText: {
+    color: '#454760',
+  },
   Link: {
     color: '#00000090',
   },

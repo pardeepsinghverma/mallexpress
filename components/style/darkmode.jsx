@@ -12,6 +12,9 @@ const darkmode = StyleSheet.create({
   SmallHeading: {
     color: '#ffffff90',
   },
+  SmallText: {
+    color: '#ffffff90',
+  },
   Link: {
     color: '#ffffff90',
   },

@@ -2,8 +2,10 @@ import React from 'react';
 import ProductCards from './components/cards/ProductCards';
 import ProductList from './components/list/ProductList';
 import SectionTitle from './components/titles/SectionTitle';
+import CategoryCards from './components/cards/CategoryCards';
 import HomeBanner from './components/banners/HomeBanner'; 
 import type { PropsWithChildren } from 'react';
+
 import {
   SafeAreaView,
   ScrollView,
@@ -35,6 +37,8 @@ function App(): JSX.Element {
       />
       <ScrollView style={styles.ScrollView}>
         <HomeBanner />
+        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Shop by Categories'} link={'See All'} />
+        <CategoryCards mode={isDarkMode ? 'dark' : 'light'}/>
         <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Latest Products'} />
         <ProductCards mode={isDarkMode ? 'dark' : 'light'} />
         <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Recomended For you'} link={'See All'} />
