@@ -1,50 +1,71 @@
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
-import React from 'react'
-import common from '../style/common.jsx'
-import darkmode from '../style/darkmode.jsx'
-import lightmode from '../style/lightmode.jsx'
+import React from 'react';
+import common from '../style/common.jsx';
+import darkmode from '../style/darkmode.jsx';
+import lightmode from '../style/lightmode.jsx';
+import variables from '../style/variable.jsx';
 
 const ProductCards = ({mode}:any) => {
     return (
-    <ScrollView showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CardsSlider}>
-        <View style={common.ProductCard}>
-            <Image style={styles.ImageContainer} source={{ uri: 'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg' }} />  
+    <ScrollView showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CategoryCardsSlider}>
+            
+        <View style={common.CategoryCard}>
+            <View style={styles.ImageBg}>
+                <Image style={styles.Image} source={variables.shirt} />  
+            </View>
             <View style={styles.TextContainer}>
-                <Text style={[common.MediumHeading, common.Bold, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>$550.00</Text>
-                <Text numberOfLines={2} style={[common.SmallText, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses for Women || Western Dresses for Women || Dress for Women || Dresses (514-516)</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
-        <View style={common.ProductCard}>
-            <Image style={styles.ImageContainer} source={{ uri: 'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg' }} />  
+        <View style={common.CategoryCard}>
+            <View style={styles.ImageBg}>
+                <Image style={styles.Image} source={variables.shirt} />  
+            </View>
             <View style={styles.TextContainer}>
-                <Text style={[common.MediumHeading, common.Bold, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>$550.00</Text>
-                <Text numberOfLines={2} style={[common.SmallText, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses for Women || Western Dresses for Women || Dress for Women || Dresses (514-516)</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
-        <View style={common.ProductCard}>
-            <Image style={styles.ImageContainer} source={{ uri: 'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg' }} />  
+        <View style={common.CategoryCard}>
+            <View style={styles.ImageBg}>
+                <Image style={styles.Image} source={variables.shirt} />  
+            </View>
             <View style={styles.TextContainer}>
-                <Text style={[common.MediumHeading, common.Bold, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>$550.00</Text>
-                <Text numberOfLines={2} style={[common.SmallText, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses for Women || Western Dresses for Women || Dress for Women || Dresses (514-516)</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
-        <View style={common.ProductCard}>
-            <Image style={styles.ImageContainer} source={{ uri: 'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg' }} />  
+        <View style={common.CategoryCard}>
+            <View style={styles.ImageBg}>
+                <Image style={styles.Image} source={variables.shirt} />  
+            </View>
             <View style={styles.TextContainer}>
-                <Text style={[common.MediumHeading, common.Bold, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>$550.00</Text>
-                <Text numberOfLines={2} style={[common.SmallText, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses for Women || Western Dresses for Women || Dress for Women || Dresses (514-516)</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
+        <View style={common.CategoryCard}>
+            <View style={styles.ImageBg}>
+                <Image style={styles.Image} source={variables.shirt} />  
+            </View>
+            <View style={styles.TextContainer}>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+            </View>    
+        </View>
+
     </ScrollView>
   )
 }
 const styles = StyleSheet.create({
 
-    ImageContainer: {
+    Image: {
         width: '100%',
-        resizeMode: 'cover',
-        height: 150,
-        borderRadius: 10,
+        resizeMode: 'contain',
+        height: '100%',
+    },
+    ImageBg: {
+        width: 80,
+        height: 80,
+        padding: 20,
+        backgroundColor: '#F6F6F6',
+        borderRadius: 50,
     },
     TextContainer: {
         paddingVertical: 10,

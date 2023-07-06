@@ -14,6 +14,7 @@ const ProductList = ({mode}:any) => {
           <Text numberOfLines={2} style={[common.SmallText, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>Lymio Dresses for Women || Western Dresses for Women || Dress for Women || Dresses (514-516)</Text>
         </View>    
       </View>
+      
     </ScrollView>
   )
 }

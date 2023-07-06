@@ -124,6 +124,15 @@ const common = StyleSheet.create({
     height: 180,
     marginRight: 10,
   },
+  CategoryCardsSlider: {
+    height: 105,
+    width: '100%',
+  },
+  CategoryCard: {
+    width: 100,
+    height: 60,
+    marginRight: 10,
+  },
 
   // Link styles
   Link: {
