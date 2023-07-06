@@ -4,10 +4,12 @@ import common from '../style/common.jsx'
 import darkmode from '../style/darkmode.jsx'
 import lightmode from '../style/lightmode.jsx'
 
-const SectionTitle = ({title, mode}:any) => {
+const SectionTitle = ({title, mode, link}:any) => {
   return (
-    <View style={styles.Container}>
+    // <View style={[styles.Container, common.D_Flex, common.FlexRow, (link==='') ? common.AlignContentStart : common.AlignContentSpaceBetween]}>
+    <View style={[styles.Container, common.D_Flex, common.FlexRow, link==='' ? common.JustifyContentStart : common.JustifyContentSpaceBetween]}>
       <Text style={[common.Heading, (mode==='dark') ? darkmode.Heading : lightmode.Heading]}>{title}</Text>
+      <Text style={[common.Link, (mode==='dark') ? darkmode.Link : lightmode.Link]}>{link}</Text>
     </View>
   )
 }

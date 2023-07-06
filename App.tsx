@@ -36,17 +36,18 @@ function App(): JSX.Element {
       <ScrollView style={styles.ScrollView}>
         <HomeBanner />
         <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Latest Products'} />
-        <ProductCards />
-        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Recomended For you'} />
-        <ProductList />
+        <ProductCards mode={isDarkMode ? 'dark' : 'light'} />
+        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Recomended For you'} link={'See All'} />
+        <ProductList mode={isDarkMode ? 'dark' : 'light'}/>
       </ScrollView>
     </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({
   ScrollView: {
-    paddingHorizontal: 14,
+    paddingHorizontal: 8,
     paddingVertical: 10,
+    fontFamily: 'Roboto',
   }
 })
 export default App;
