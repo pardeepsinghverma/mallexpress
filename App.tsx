@@ -35,7 +35,7 @@ function App(): JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView style={styles.ScrollView}>
+      <ScrollView overScrollMode='never' style={styles.ScrollView}>
         <HomeBanner />
         <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Shop by Categories'} link={'See All'} />
         <CategoryCards mode={isDarkMode ? 'dark' : 'light'}/>

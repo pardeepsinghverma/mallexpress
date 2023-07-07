@@ -6,7 +6,7 @@ import lightmode from '../style/lightmode.jsx'
 
 const ProductCards = ({mode}:any) => {
     return (
-    <ScrollView showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CardsSlider}>
+    <ScrollView overScrollMode='never' showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CardsSlider}>
         <View style={common.ProductCard}>
             <Image style={styles.ImageContainer} source={{ uri: 'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg' }} />  
             <View style={styles.TextContainer}>

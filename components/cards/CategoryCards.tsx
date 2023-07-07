@@ -7,7 +7,7 @@ import variables from '../style/variable.jsx';
 
 const ProductCards = ({mode}:any) => {
     return (
-    <ScrollView showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CategoryCardsSlider}>
+    <ScrollView overScrollMode='never' showsHorizontalScrollIndicator={false} horizontal scrollEnabled style={common.CategoryCardsSlider}>
             
         <View style={common.CategoryCard}>
             <View style={styles.ImageBg}>
