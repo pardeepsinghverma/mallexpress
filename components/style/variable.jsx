@@ -80,7 +80,8 @@ const variables = {
 
     //images
     shirt: require('../assets/image/category/shirt.png'),
-    // mainLogo: require('../../assets/images/mainLogo.png'),
+    slide1: require('../assets/image/slider/slide1.png'),
+    // mainLogo: require('../assets/image/sliders/slider1.png'),
     // introSliderImg: require('../../assets/images/introSliderImg.png'),
     // home: require('../../assets/images/home.png'),
     // bag: require('../../assets/images/bag.png'),

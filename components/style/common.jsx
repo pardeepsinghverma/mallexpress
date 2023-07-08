@@ -113,6 +113,15 @@ const common = StyleSheet.create({
   Bold: {
     fontWeight: 'bold',
   },
+  TextCenter: {
+    textAlign: 'center',
+  },
+  TextRight: {
+    textAlign: 'right',
+  },
+  TextLeft: {
+    textAlign: 'left',
+  },
 
   // Card styles
   CardsSlider: {
@@ -122,16 +131,16 @@ const common = StyleSheet.create({
   ProductCard: {
     width: 160,
     height: 180,
-    marginRight: 10,
+    marginRight: 14,
   },
   CategoryCardsSlider: {
     height: 105,
     width: '100%',
   },
   CategoryCard: {
-    width: 100,
+    width:80,
     height: 60,
-    marginRight: 10,
+    marginRight: 14,
   },
 
   // Link styles

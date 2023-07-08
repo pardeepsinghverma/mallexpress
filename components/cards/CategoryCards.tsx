@@ -14,7 +14,7 @@ const ProductCards = ({mode}:any) => {
                 <Image style={styles.Image} source={variables.shirt} />  
             </View>
             <View style={styles.TextContainer}>
-                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, common.TextCenter, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
         <View style={common.CategoryCard}>
@@ -22,7 +22,7 @@ const ProductCards = ({mode}:any) => {
                 <Image style={styles.Image} source={variables.shirt} />  
             </View>
             <View style={styles.TextContainer}>
-                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, common.TextCenter, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
         <View style={common.CategoryCard}>
@@ -30,7 +30,7 @@ const ProductCards = ({mode}:any) => {
                 <Image style={styles.Image} source={variables.shirt} />  
             </View>
             <View style={styles.TextContainer}>
-                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, common.TextCenter, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
         <View style={common.CategoryCard}>
@@ -38,7 +38,7 @@ const ProductCards = ({mode}:any) => {
                 <Image style={styles.Image} source={variables.shirt} />  
             </View>
             <View style={styles.TextContainer}>
-                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, common.TextCenter, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
         <View style={common.CategoryCard}>
@@ -46,7 +46,7 @@ const ProductCards = ({mode}:any) => {
                 <Image style={styles.Image} source={variables.shirt} />  
             </View>
             <View style={styles.TextContainer}>
-                <Text numberOfLines={2} style={[common.SmallText, common.Bold, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
+                <Text numberOfLines={2} style={[common.SmallText, common.Bold, common.TextCenter, (mode==='dark') ? darkmode.SmallText : lightmode.SmallText]}>Lymio Dresses</Text>
             </View>    
         </View>
 
@@ -63,12 +63,13 @@ const styles = StyleSheet.create({
     ImageBg: {
         width: 80,
         height: 80,
-        padding: 20,
+        padding: 16,
         backgroundColor: '#F6F6F6',
         borderRadius: 50,
     },
     TextContainer: {
         paddingVertical: 10,
+        textAlign: 'center',
     },
 
 })

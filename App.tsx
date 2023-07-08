@@ -20,6 +20,7 @@ import {
   Colors,
   Header,
 } from 'react-native/Libraries/NewAppScreen';
+import TopNavigation from './components/navigations/topNavigation/TopNavigation';
 
 
 function App(): JSX.Element {
@@ -36,6 +37,7 @@ function App(): JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <ScrollView overScrollMode='never' style={styles.ScrollView}>
+        <TopNavigation />
         <HomeBanner />
         <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Shop by Categories'} link={'See All'} />
         <CategoryCards mode={isDarkMode ? 'dark' : 'light'}/>

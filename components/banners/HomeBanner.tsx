@@ -1,10 +1,11 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
+import variables from '../style/variable.jsx';
 
 const HomeBanner = () => {
   return (
     <View style={styles.Container}>
-      <Image style={styles.Image} source={{uri:'https://morecustomersapp.com/wp-content/uploads/2020/08/banner-and-eCommerce.jpg'}}/>
+         <Image style={styles.Image} source={variables.slide1} />  
     </View>
   )
 }
