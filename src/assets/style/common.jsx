@@ -134,12 +134,12 @@ const common = StyleSheet.create({
     marginRight: 14,
   },
   CategoryCardsSlider: {
-    height: 105,
+    height: 120,
     width: '100%',
   },
   CategoryCard: {
     width:80,
-    height: 60,
+    height: 80,
     marginRight: 14,
   },
 

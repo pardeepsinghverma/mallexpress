@@ -27,6 +27,17 @@ Black: {
   Link: {
     color: '#00000090',
   },
+
+  PrimaryBgColor: {
+    backgroundColor: '#ffffff',
+  },
+  SecondaryBgColor: {
+    backgroundColor: '#eaeaea',
+  },
+  AscentBgColor: {
+    backgroundColor: '#F6F6F6',
+  },
+  
 })
 
 export default lightmode;

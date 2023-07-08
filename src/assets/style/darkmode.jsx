@@ -18,6 +18,16 @@ const darkmode = StyleSheet.create({
   Link: {
     color: '#ffffff90',
   },
+
+  PrimaryBgColor: {
+    backgroundColor: '#000000',
+  },
+  SecondaryBgColor: {
+    backgroundColor: '#262626',
+  },
+  AscentBgColor: {
+    backgroundColor: '#3e3e3e',
+  },
 })
 
 export default darkmode;

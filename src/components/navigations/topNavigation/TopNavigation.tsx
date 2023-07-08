@@ -1,21 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Keyboard, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
+import common from '../../../assets/style/common.jsx'
+import darkmode from '../../../assets/style/darkmode.jsx'
+import lightmode from '../../../assets/style/lightmode.jsx'
 
 import { TextInput } from 'react-native'
 import { faFilter, faMugSaucer, faSearch } from '@fortawesome/free-solid-svg-icons'
 
-const TopNavigation = () => {
+const TopNavigation = ({mode}:any) => {
   return (
-    <View style={styles.searchSection}>
+    <View style={[styles.searchSection, (mode==='dark') ? darkmode.AscentBgColor : lightmode.AscentBgColor]}>
       {/* <Icon style={styles.searchIcon} name="ios-search" size={20} color="#000"/> */}
-      <FontAwesomeIcon style={styles.searchIcon} icon={ faSearch } />
+      <FontAwesomeIcon style={[styles.searchIcon, mode==='dark' ? darkmode.SmallHeading : lightmode.SmallHeading]} icon={ faSearch } />
       <TextInput
-          style={styles.input}
-          placeholder="User Nickname"
-          underlineColorAndroid="transparent"
+        onSubmitEditing={Keyboard.dismiss}
+        style={[styles.input, mode === 'dark' ? darkmode.SmallHeading : lightmode.SmallHeading]}
+        placeholderTextColor={mode === 'dark' ? darkmode.SmallHeading.color : lightmode.SmallHeading.color}
+        placeholder="Search Here..."
+        underlineColorAndroid="transparent"
       />
-      <FontAwesomeIcon style={styles.searchIcon} icon={ faFilter } />
+      <FontAwesomeIcon style={[styles.searchIcon, mode==='dark' ? darkmode.SmallHeading : lightmode.SmallHeading]} icon={ faFilter } />
     </View>
   )
 }
@@ -28,20 +33,23 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#00000040',
     marginBottom: 20,
     marginTop: 20,
     borderRadius: 10,
     paddingHorizontal: 16,
-},
+  },
+  darksearchIcon: {
+    padding: 10,
+  },
+  lightsearchIcon: {
+    padding: 10,
+  },
 searchIcon: {
   padding: 2,
   size: 32,
-  color: '#f4f4f4',
 },
 input: {
-    flex: 1,
-    padding: 10,
-    color: '#f4f4f4',
+  flex: 1,
+  padding: 10,
 },
 })
