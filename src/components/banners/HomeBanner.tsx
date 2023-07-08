@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import variables from '../style/variable.jsx';
+import variables from '../../assets/style/variable.jsx';
 
 const HomeBanner = () => {
   return (

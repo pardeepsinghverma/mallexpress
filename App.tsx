@@ -1,9 +1,9 @@
 import React from 'react';
-import ProductCards from './components/cards/ProductCards';
-import ProductList from './components/list/ProductList';
-import SectionTitle from './components/titles/SectionTitle';
-import CategoryCards from './components/cards/CategoryCards';
-import HomeBanner from './components/banners/HomeBanner'; 
+import ProductCards from './src/components/cards/ProductCards';
+import ProductList from './src/components/list/ProductList';
+import SectionTitle from './src/components/titles/SectionTitle';
+import CategoryCards from './src/components/cards/CategoryCards';
+import HomeBanner from './src/components/banners/HomeBanner'; 
 import type { PropsWithChildren } from 'react';
 
 import {
@@ -20,7 +20,7 @@ import {
   Colors,
   Header,
 } from 'react-native/Libraries/NewAppScreen';
-import TopNavigation from './components/navigations/topNavigation/TopNavigation';
+import TopNavigation from './src/components/navigations/topNavigation/TopNavigation';
 
 
 function App(): JSX.Element {

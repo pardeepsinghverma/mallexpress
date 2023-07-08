@@ -79,8 +79,9 @@ const variables = {
     poppins500: 'Poppins-SemiBold',
 
     //images
-    shirt: require('../assets/image/category/shirt.png'),
-    slide1: require('../assets/image/slider/slide1.png'),
+    shirt: require('../../../src/assets/image/category/shirt.png'),
+    // shirt: require('../assets/image/category/shirt.png'),
+    slide1: require('../../../src/assets/image/slider/slide1.png'),
     // mainLogo: require('../assets/image/sliders/slider1.png'),
     // introSliderImg: require('../../assets/images/introSliderImg.png'),
     // home: require('../../assets/images/home.png'),

@@ -1,8 +1,8 @@
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
-import common from '../style/common.jsx'
-import darkmode from '../style/darkmode.jsx'
-import lightmode from '../style/lightmode.jsx'
+import common from '../../assets/style/common.jsx'
+import darkmode from '../../assets/style/darkmode.jsx'
+import lightmode from '../../assets/style/lightmode.jsx'
 
 const ProductCards = ({mode}:any) => {
     return (
