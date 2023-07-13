@@ -80,6 +80,16 @@ const variables = {
 
     //images
     shirt: require('../../../src/assets/image/category/shirt.png'),
+    tshirt: require('../../../src/assets/image/category/tshirt.png'),
+    lamp: require('../../../src/assets/image/category/lamp.png'),
+    electronics: require('../../../src/assets/image/category/electronics.png'),
+    book: require('../../../src/assets/image/category/book.png'),
+    beauty: require('../../../src/assets/image/category/beauty.png'),
+    sports: require('../../../src/assets/image/category/sports.png'),
+    toys: require('../../../src/assets/image/category/toys.png'),
+    sofa: require('../../../src/assets/image/category/sofa.png'),
+    car: require('../../../src/assets/image/category/car.png'),
+    appliances: require('../../../src/assets/image/category/appliances.png'),
     // shirt: require('../assets/image/category/shirt.png'),
     slide1: require('../../../src/assets/image/slider/slide1.png'),
     // mainLogo: require('../assets/image/sliders/slider1.png'),
