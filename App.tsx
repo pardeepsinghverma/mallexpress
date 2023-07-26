@@ -23,6 +23,8 @@ import {
   Header,
 } from 'react-native/Libraries/NewAppScreen';
 import TopNavigation from './src/components/navigations/topNavigation/TopNavigation';
+import Home from './src/screens/Home';
+import SplashScreen from './src/screens/Splash/SplashScreen';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,24 +37,12 @@ function App(): JSX.Element {
         // backgroundColor={isDarkMode ? darkmode.PrimaryBgColor.backgroundColor : lightmode.PrimaryBgColor.backgroundColor}
         backgroundColor={isDarkMode ? darkmode.PrimaryBgColor.backgroundColor : lightmode.PrimaryBgColor.backgroundColor}
       />
-      <ScrollView overScrollMode='never' style={styles.ScrollView}>
-        <TopNavigation mode={isDarkMode ? 'dark' : 'light'} />
-        <HomeBanner />
-        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Shop by Categories'} link={'See All'} />
-        <CategoryCards mode={isDarkMode ? 'dark' : 'light'}/>
-        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Latest Products'} />
-        <ProductCards mode={isDarkMode ? 'dark' : 'light'} />
-        <SectionTitle mode={isDarkMode ? 'dark' : 'light'} title={'Recomended For you'} link={'See All'} />
-        <ProductList mode={isDarkMode ? 'dark' : 'light'}/>
-      </ScrollView>
+      {/* <Home isDarkMode={isDarkMode} /> */}
+      <SplashScreen isDarkMode={isDarkMode} />
     </SafeAreaView>
   );
 }
 const styles = StyleSheet.create({
-  ScrollView: {
-    paddingHorizontal: 8,
-    paddingVertical: 10,
-    fontFamily: 'Roboto',
-  }
+
 })
 export default App;
